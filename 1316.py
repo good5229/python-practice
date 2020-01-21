@@ -6,8 +6,8 @@ def find_groupword():
     groupword_count = 0
 
     for i in range(num):
-        word = input()
-        for j in range(len(word)):
+        word = sys.stdin.readline().strip()
+        for j in word:
             if j != len(word) - 1:
                 if word[j] == word[j + 1]:
                     pass
@@ -19,4 +19,3 @@ def find_groupword():
 
 
 print(find_groupword())
-
