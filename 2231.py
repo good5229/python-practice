@@ -1,0 +1,21 @@
+import sys
+
+N = int(sys.stdin.readline().strip())  # 목표 분해합
+low = 0
+
+
+def get_devided_num(low_n):
+    e = list(map(int, str(low_n)))
+    devided_num = low_n + sum(e)
+
+    return devided_num
+
+
+while get_devided_num(low) != N:
+    if low == N:
+        low = 0
+        break
+    else:
+        low += 1
+
+print(low)
