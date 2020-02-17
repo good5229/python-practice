@@ -11,5 +11,6 @@ def solve(a, b):
     return i * a, b // i
 
 
-a, b = map(int, input().split())
-print(*solve(a, b))
+num1, num2 = map(int, input().split())
+print(*solve(num1, num2))
+
