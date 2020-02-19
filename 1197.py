@@ -30,7 +30,7 @@ def union(v, u):
 
 
 def kruskal(graph):
-    for v in graph['verticles']:
+    for v in graph['vertices']:
         make_set(v)
 
     mst = []
@@ -46,13 +46,11 @@ def kruskal(graph):
             mst.append(edge)
 
     return mst
-#
-# V = int(sys.stdin.readline().strip())
-# E = int(sys.stdin.readline().strip())
+
 
 V, E = map(int, sys.stdin.readline().split())
 graph = {
-    'verticles': [str(i) for i in range(1, V + 1)],
+    'vertices': [str(i) for i in range(1, V + 1)],
     'edges': []
 }
 for i in range(E):
